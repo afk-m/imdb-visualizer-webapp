@@ -1,0 +1,131 @@
+@import 'variables';
+
+body {
+    font-family: $font-family-base;
+    background-color: $light-mode-bg;
+    color: $light-mode-text;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    }
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    text-align: center;
+    margin: 15px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+// Links
+a {
+    color: $primary-color;
+    &:hover {
+    color: darken($primary-color, 10%);
+    }
+}
+
+// Buttons
+.btn-custom {
+    background-color: $primary-color;
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.App {
+    .form-control, .btn {
+        display: block; // Ensure elements are block-level for margin auto to work
+        margin: 0 auto; // Center block-level elements horizontally
+    }
+
+    .form-group { // If using form groups
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+// Forms
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 0.25rem;
+    border: 1px solid $secondary-color;
+}
+
+// Navigation
+.navbar-custom {
+    background-color: $primary-color;
+    .navbar-brand {
+        color: #fff;
+        &:hover {
+            color: lighten(#fff, 10%);
+    }
+  }
+  .nav-link {
+    color: #fff;
+    &:hover {
+        color: lighten(#fff, 10%);
+    }
+  }
+}
+
+// Footer
+footer {
+    background-color: $secondary-color;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+// Utility Classes
+.mt-1 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+// Container
+.container,
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer {
+    background-color: $dark-bg;
+    color: $dark-text;
+    border-top: 1px solid #e7e7e7;
+  
+    span {
+        font-size: 0.9rem;
+    }
+}
+
+.DataVisualization {
+    display: flex;
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically, if applicable
+    width: 100%; // Ensure the container takes full width of its parent
+
+    svg {
+        width: 100%; // Make the SVG responsive
+        max-width: 600px; // Maximum size for the visualization
+        height: auto; // Maintain aspect ratio
+        margin: 0 auto; // Center the SVG horizontally if needed
+    }
+}
+  

@@ -1,0 +1,24 @@
+// Roboto font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+@import 'variables'; // variables for colors, fonts, etc.
+
+@import '~bootstrap/scss/bootstrap';
+
+// custom styles
+@import 'custom';
+@import 'dark-mode'; // dark mode
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $light-mode-bg;
+  color: $light-mode-text;
+}
+
+.container {
+  padding: 1rem;
+}

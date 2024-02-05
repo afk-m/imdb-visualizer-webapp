@@ -1,0 +1,22 @@
+header {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 20px 0;
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  footer {
+    background-color: $secondary-color;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
